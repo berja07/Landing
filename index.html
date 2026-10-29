@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#385b4f">
+  <meta name="color-scheme" content="light">
+  <title>MyPresence for Android — Download &amp; Install Guide</title>
+  <meta name="description" content="Download MyPresence for Android and follow a simple step-by-step guide to install the APK safely. Announcements, event RSVPs, calendars, and feedback in one app.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MyPresence for Android — Download &amp; Install Guide">
+  <meta property="og:description" content="Announcements, event RSVPs, calendars, and feedback in one app. Download the APK and install it in about a minute.">
+  <meta property="og:image" content="assets/icon-launcher-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/icon-launcher-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-launcher-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Inline icon sprite -->
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4.5 20h15"/></symbol>
+    <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m0 0-6.5-6.5M20 12l-6.5 6.5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m0 0 6.5-6.5M12 20l-6.5-6.5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8.5 12.3 2.4 2.4 4.8-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.2 19 6v5.4c0 4.4-2.8 7.5-7 9.4-4.2-1.9-7-5-7-9.4V6l7-2.8Z"/><path d="m9 12 2.1 2.1L15.4 10"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M4 10v4a1 1 0 0 0 1 1h2l7 4V5L7 9H5a1 1 0 0 0-1 1Z"/><path d="M17.5 8.5a5 5 0 0 1 0 7M7 15v4h3v-2.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M17.5 14.8a5.5 5.5 0 0 1 3 5.2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5Z"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M12 3.5c.5 4 2.5 6 6.5 6.5-4 .5-6 2.5-6.5 6.5-.5-4-2.5-6-6.5-6.5 4-.5 6-2.5 6.5-6.5Z"/><path d="M19 15.5c.2 1.8 1.2 2.8 3 3-1.8.2-2.8 1.2-3 3-.2-1.8-1.2-2.8-3-3 1.8-.2 2.8-1.2 3-3Z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-warning" viewBox="0 0 24 24"><path d="M12 3.8 21 20H3L12 3.8Z"/><path d="M12 9v5M12 17.3h.01"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3.5H7a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.5L14 3.5Z"/><path d="M14 3.5v5h5M9 13h6M9 16.5h4"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10" width="15" height="10.5" rx="2.5"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10M12 14v2.5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3.5 10.5 8.5-7 8.5 7"/><path d="M5.5 9v11h13V9M9.5 20v-6h5v6"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.4 2"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M3.5 9.5a13 13 0 0 1 17 0M6.5 13a8.7 8.7 0 0 1 11 0M9.5 16.4a4.2 4.2 0 0 1 5 0M12 20h.01"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 11.5a8 8 0 0 1-8 8 8.6 8.6 0 0 1-3.4-.7L4 20l1.2-4.6a8 8 0 1 1 15.3-3.9Z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-android" viewBox="0 0 24 24"><path d="M6 10a6 6 0 0 1 12 0v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 6 16.5V10Z"/><path d="m8 4.5 1.3 2.2M16 4.5l-1.3 2.2M9.5 13h.01M14.5 13h.01M3 12v4M21 12v4"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="m4 7 8 6 8-6"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="MyPresence home">
+        <img class="brand-mark" src="assets/logo-mark.png" alt="" width="38" height="54">
+        <img class="brand-word" src="assets/logo-wordmark.png" alt="MyPresence" width="150" height="24">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#install">How to install</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="btn btn-primary btn-small header-cta" href="downloads/MyPresence.apk" download>
+        <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+        Download APK
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <nav aria-label="Mobile">
+        <a href="#features">Features</a>
+        <a href="#install">How to install</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="downloads/MyPresence.apk" download>
+          <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+          Download APK
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="pulse-dot"></span> Android APK &middot; Version 1.0.0</span>
+          <h1>Your events.<br>Your people.<br><em>Your presence.</em></h1>
+          <p class="lead">One calm Android app for announcements, RSVPs, the shared calendar, event ideas, and feedback — made for your community.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="downloads/MyPresence.apk" download>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+              Download for Android
+            </a>
+            <a class="btn btn-ghost" href="#install">
+              See how to install
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg>
+            </a>
+          </div>
+
+          <ul class="meta-row" aria-label="App details">
+            <li>v1.0.0</li>
+            <li>Android 7.0+</li>
+            <li><span data-apk-size>54.3 MB</span></li>
+          </ul>
+
+          <p class="hero-note">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            Direct install. No Play Store account needed.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="spark spark-one"></span>
+          <span class="spark spark-two"></span>
+          <span class="spark spark-three"></span>
+
+          <div class="phone">
+            <div class="phone-frame">
+              <div class="dynamic-island"></div>
+              <div class="phone-screen">
+                <div class="status-bar">
+                  <span>9:41</span>
+                  <span class="status-icons">
+                    <svg viewBox="0 0 18 12" class="status-svg"><path d="M1 9h2v2H1zM5 7h2v4H5zM9 4h2v7H9zM13 1h2v10h-2z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 16 12" class="status-svg"><path d="M8 9.8a1.3 1.3 0 1 0 0 2.6 1.3 1.3 0 0 0 0-2.6ZM4.4 8.5a5 5 0 0 1 7.2 0M2 6.1a8.4 8.4 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                    <svg viewBox="0 0 24 12" class="status-svg battery"><rect x="1" y="2" width="19" height="8" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.3"/><rect x="3" y="4" width="14" height="4" rx="1" fill="currentColor"/><path d="M21.5 4.5v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                  </span>
+                </div>
+
+                <div class="app-content">
+                  <div class="app-header">
+                    <div>
+                      <p class="app-greeting">Good morning,</p>
+                      <p class="app-name">Alex</p>
+                    </div>
+                    <span class="app-avatar">A</span>
+                  </div>
+
+                  <div class="app-event-card">
+                    <div class="app-event-top">
+                      <span class="app-pill">Next event</span>
+                      <span class="app-going"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg> Going</span>
+                    </div>
+                    <div class="app-event-body">
+                      <div class="app-date"><strong>24</strong><span>OCT</span></div>
+                      <div class="app-event-info">
+                        <h4>General Assembly</h4>
+                        <p><svg class="icon" viewBox="0 0 24 24"><use href="#i-clock"/></svg> 2:00 PM &middot; Main Hall</p>
+                      </div>
+                    </div>
+                    <div class="app-event-footer">
+                      <span class="app-avatars"><i>A</i><i>M</i><i>J</i></span>
+                      <span>42 going</span>
+                    </div>
+                  </div>
+
+                  <div class="app-section-head">
+                    <h5>Announcements</h5>
+                    <span>See all</span>
+                  </div>
+
+                  <div class="app-announcement">
+                    <span class="app-announce-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-megaphone"/></svg></span>
+                    <div>
+                      <h6>Founders&rsquo; Week is here</h6>
+                      <p>Join us for a week of talks, games, and good food.</p>
+                    </div>
+                  </div>
+
+                  <div class="app-announcement app-announcement--soft">
+                    <span class="app-announce-icon app-announce-icon--cream"><svg class="icon" viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+                    <div>
+                      <h6>Tell us what you think</h6>
+                      <p>Feedback for the last event is now open.</p>
+                    </div>
+                  </div>
+
+                  <div class="app-quick">
+                    <span><svg class="icon" viewBox="0 0 24 24"><use href="#i-calendar"/></svg>Calendar</span>
+                    <span><svg class="icon" viewBox="0 0 24 24"><use href="#i-sparkles"/></svg>Suggest</span>
+                    <span><svg class="icon" viewBox="0 0 24 24"><use href="#i-user"/></svg>Profile</span>
+                  </div>
+                </div>
+
+                <div class="app-nav">
+                  <span class="active"><svg class="icon" viewBox="0 0 24 24"><use href="#i-home"/></svg><em>Home</em></span>
+                  <span><svg class="icon" viewBox="0 0 24 24"><use href="#i-calendar"/></svg><em>Calendar</em></span>
+                  <span><svg class="icon" viewBox="0 0 24 24"><use href="#i-user"/></svg><em>Account</em></span>
+                </div>
+                <span class="home-indicator"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card float-rsvp">
+            <span class="float-icon float-icon--green"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></span>
+            <div>
+              <strong>RSVP confirmed</strong>
+              <span>General Assembly &middot; Oct 24</span>
+            </div>
+          </div>
+
+          <div class="float-card float-feedback">
+            <div class="float-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <div>
+              <strong>Feedback sent</strong>
+              <span>Thanks for helping out</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- At a glance -->
+    <section class="glance" aria-label="MyPresence at a glance">
+      <div class="container glance-grid">
+        <div class="glance-item"><strong>1 tap</strong><span>RSVP to any event</span></div>
+        <div class="glance-item"><strong>One feed</strong><span>for every update</span></div>
+        <div class="glance-item"><strong>1 min</strong><span>from download to done</span></div>
+        <div class="glance-item"><strong>Android 7+</strong><span>supported and up</span></div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section features" id="features">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--plain">What&rsquo;s inside</span>
+          <h2>A calmer way to <em>stay connected.</em></h2>
+          <p>Everything your organization needs to keep everyone in the loop — without another group chat.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card feature-card--featured" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-megaphone"/></svg></span>
+            <h3>Announcements, all in one place</h3>
+            <p>The latest updates from your organization, arranged in a clean feed you can actually keep up with.</p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg></span>
+            <h3>RSVP without the group chat</h3>
+            <p>Say you&rsquo;re going — or not — with one tap. Organizers get a clear headcount, and you get on with your day.</p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-calendar"/></svg></span>
+            <h3>A calendar you share</h3>
+            <p>Assemblies, celebrations, and deadlines live in one calendar everyone can see.</p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-sparkles"/></svg></span>
+            <h3>Ideas that get heard</h3>
+            <p>Suggest the next event and vote in polls for the details that matter — food, theme, and everything in between.</p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-star"/></svg></span>
+            <h3>Feedback that counts</h3>
+            <p>Rate events and leave a note, so the next one is even better than the last.</p>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-user"/></svg></span>
+            <h3>Your details, up to date</h3>
+            <p>Manage your profile and photo from your account, anytime. Your info stays with you.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Install guide -->
+    <section class="install" id="install">
+      <div class="container install-grid">
+        <div class="install-intro" data-reveal>
+          <span class="eyebrow eyebrow--light">Install guide</span>
+          <h2>From download to <em>done</em> in about a minute.</h2>
+          <p>MyPresence installs directly from an APK file — no Play Store required. Follow these steps once, and you&rsquo;re in.</p>
+
+          <div class="requirements">
+            <h3>Before you start</h3>
+            <ul>
+              <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-android"/></svg> Android 7.0 (Nougat) or newer</li>
+              <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-wifi"/></svg> An internet connection for sign-in</li>
+              <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-file"/></svg> About <span data-apk-size>54.3 MB</span> of free space</li>
+            </ul>
+          </div>
+
+          <a class="btn btn-cream" href="downloads/MyPresence.apk" download>
+            <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+            Download the APK
+          </a>
+          <p class="install-note">Your browser will keep the file in Downloads.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step-num">01</span>
+            <div class="step-body">
+              <h3>Download the APK</h3>
+              <p>Tap <strong>Download the APK</strong>. Your browser saves <strong>MyPresence.apk</strong> to your Downloads folder. If it asks whether to keep the file, choose <strong>Keep</strong> or <strong>Download anyway</strong> — that&rsquo;s the standard warning for any APK.</p>
+              <div class="file-chip">
+                <span class="file-chip-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-file"/></svg></span>
+                <div class="file-chip-text">
+                  <strong>MyPresence.apk</strong>
+                  <span>Android package &middot; v1.0.0</span>
+                </div>
+                <span class="file-chip-check"><svg class="icon" viewBox="0 0 24 24"><use href="#i-check"/></svg></span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step" data-reveal>
+            <span class="step-num">02</span>
+            <div class="step-body">
+              <h3>Allow installs from your browser</h3>
+              <p>Android only installs apps from sources you approve. Open the setting below and allow the browser or file manager you used to download the APK.</p>
+
+              <div class="version-toggle" role="tablist" aria-label="Choose your Android version">
+                <button type="button" role="tab" aria-selected="true" aria-controls="path-modern" id="tab-modern" data-version="modern">Android 8.0+</button>
+                <button type="button" role="tab" aria-selected="false" aria-controls="path-legacy" id="tab-legacy" data-version="legacy" tabindex="-1">Android 7.x</button>
+              </div>
+
+              <div class="path" id="path-modern" role="tabpanel" aria-labelledby="tab-modern" data-path="modern">
+                <span>Settings</span><span class="path-arrow">›</span>
+                <span>Apps</span><span class="path-arrow">›</span>
+                <span>Special app access</span><span class="path-arrow">›</span>
+                <span>Install unknown apps</span><span class="path-arrow">›</span>
+                <span>Chrome or Files</span><span class="path-arrow">›</span>
+                <span>Allow from this source</span>
+              </div>
+              <div class="path" id="path-legacy" role="tabpanel" aria-labelledby="tab-legacy" data-path="legacy" hidden>
+                <span>Settings</span><span class="path-arrow">›</span>
+                <span>Security</span><span class="path-arrow">›</span>
+                <span>Unknown sources</span><span class="path-arrow">›</span>
+                <span>On</span>
+              </div>
+              <p class="step-hint">Menu names vary a little between phone brands — look for &ldquo;install unknown apps&rdquo; or &ldquo;unknown sources.&rdquo;</p>
+            </div>
+          </li>
+
+          <li class="step" data-reveal>
+            <span class="step-num">03</span>
+            <div class="step-body">
+              <h3>Open the file and install</h3>
+              <p>Tap the download notification, or open <strong>Files by Google</strong> &rarr; <strong>Downloads</strong> (Samsung: <strong>My Files</strong> &rarr; <strong>Downloads</strong>). Tap <strong>MyPresence.apk</strong>, then <strong>Install</strong>. Confirm with your PIN or fingerprint if asked.</p>
+              <div class="install-demo">
+                <span class="install-demo-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-android"/></svg></span>
+                <div><strong>MyPresence</strong><span>Do you want to install this app?</span></div>
+                <span class="install-demo-btn">Install</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step" data-reveal>
+            <span class="step-num">04</span>
+            <div class="step-body">
+              <h3>If Play Protect warns you</h3>
+              <p>Because the app isn&rsquo;t from the Play Store, Play Protect may scan it and show a warning. Tap <strong>More details</strong> &rarr; <strong>Install anyway</strong>. Only continue if you downloaded the file from this page.</p>
+              <div class="protect-demo">
+                <span class="protect-demo-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-shield"/></svg></span>
+                <div><strong>Play Protect</strong><span>Unrecognized app</span></div>
+                <span class="protect-demo-link">More details</span>
+                <span class="protect-demo-btn">Install anyway</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="step" data-reveal>
+            <span class="step-num">05</span>
+            <div class="step-body">
+              <h3>Sign in and you&rsquo;re set</h3>
+              <p>Open MyPresence and sign in with your existing account, or create a new one. Your events, announcements, and profile will be right there.</p>
+              <p class="step-hint">Forgot your password? Use the reset link on the login screen. You can delete the APK from Downloads afterward to save space.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro" data-reveal>
+          <span class="eyebrow eyebrow--plain">Good to know</span>
+          <h2>Questions, <em>answered.</em></h2>
+          <p>The short version: APKs are normal Android apps. The only thing to check is where you got the file.</p>
+
+          <div class="help-card">
+            <span class="help-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-chat"/></svg></span>
+            <h3>Still stuck?</h3>
+            <p>Ask the person who shared this page with you — they manage your organization&rsquo;s MyPresence account.</p>
+            <a href="#install">Back to the install steps <svg class="icon" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details>
+            <summary>Is installing an APK safe?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>APK is Android&rsquo;s standard app format. Android asks for extra permission because the app isn&rsquo;t coming from the Play Store. The important thing is the source: only install the file from this page or from someone you trust in your organization.</p>
+          </details>
+
+          <details>
+            <summary>Why does Android warn that the file can harm my device?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>That&rsquo;s a standard warning shown for any APK downloaded through a browser. It doesn&rsquo;t mean the file is malicious. If you downloaded MyPresence from this page, choose <strong>Keep</strong> or <strong>Download anyway</strong> and continue.</p>
+          </details>
+
+          <details>
+            <summary>Play Protect blocked the install. What now?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>Tap <strong>More details</strong> &rarr; <strong>Install anyway</strong>. If that option isn&rsquo;t offered, open the Play Store &rarr; your profile &rarr; <strong>Play Protect</strong> &rarr; the settings gear &rarr; turn off <strong>Scan apps with Play Protect</strong>. Install the app, then turn scanning back on. Only do this for a file you trust.</p>
+          </details>
+
+          <details>
+            <summary>&ldquo;App not installed&rdquo; keeps appearing.<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>This usually means an older copy of MyPresence is installed with a different signature, or your phone is low on storage. Uninstall the old app, free up some space, then open the APK again. Your account data lives in the cloud, so signing back in is easy.</p>
+          </details>
+
+          <details>
+            <summary>Do I need a Google account or the Play Store?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>No. You can install and use MyPresence without a Play Store account. You only need an internet connection and your MyPresence login.</p>
+          </details>
+
+          <details>
+            <summary>Can I install the APK on an iPhone?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>No — APK files are for Android only. An iPhone version would need to be distributed through the App Store or TestFlight.</p>
+          </details>
+
+          <details>
+            <summary>How do I update MyPresence later?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>Download the newest APK from this page and install it over the current version. Your account and data stay in the cloud. If Android refuses because the app signature changed, uninstall the old copy first, then install the new APK.</p>
+          </details>
+
+          <details>
+            <summary>Which Android versions are supported?<span class="faq-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-plus"/></svg></span></summary>
+            <p>Android 7.0 (Nougat) and newer. Most phones released in the last several years will work.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="cta-inner" data-reveal>
+          <img class="cta-mark" src="assets/logo-mark.png" alt="" aria-hidden="true">
+          <div class="cta-copy">
+            <h2>Ready to be <em>present?</em></h2>
+            <p>Download MyPresence and keep every event, update, and idea within reach.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-cream btn-large" href="downloads/MyPresence.apk" download>
+              <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>
+              Download for Android
+            </a>
+            <span class="cta-meta">v1.0.0 &middot; Android 7.0+ &middot; <span data-apk-size>54.3 MB</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="MyPresence home">
+            <img class="brand-mark" src="assets/logo-mark.png" alt="" width="34" height="48">
+            <img class="brand-word" src="assets/logo-wordmark.png" alt="MyPresence" width="140" height="22">
+          </a>
+          <p>A simpler way to stay connected to your community.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h3>Explore</h3>
+            <a href="#features">Features</a>
+            <a href="#install">How to install</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="footer-col">
+            <h3>Get the app</h3>
+            <a href="downloads/MyPresence.apk" download>Download APK</a>
+            <a href="#install">System requirements</a>
+            <a href="#install">Installation guide</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> MyPresence. All rights reserved.</span>
+        <span>Made for Android &middot; v1.0.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
