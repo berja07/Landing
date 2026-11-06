@@ -562,25 +562,6 @@ ul, ol {
   mask-image: radial-gradient(ellipse at center, #000 0%, transparent 68%);
 }
 
-.orbit {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.orbit-one {
-  width: 480px;
-  height: 480px;
-  border: 1px dashed rgba(56, 91, 79, 0.24);
-  animation: orbit-spin 80s linear infinite;
-}
-
-.orbit-two {
-  width: 610px;
-  height: 610px;
-  border: 1px solid rgba(56, 91, 79, 0.1);
-}
-
 .spark {
   position: absolute;
   width: 8px;
@@ -610,10 +591,6 @@ ul, ol {
   width: 4px;
   height: 4px;
   opacity: 0.35;
-}
-
-@keyframes orbit-spin {
-  to { transform: rotate(360deg); }
 }
 
 .phone {
@@ -1095,87 +1072,6 @@ ul, ol {
   border-radius: 999px;
   background: rgba(48, 48, 48, 0.65);
   transform: translateX(-50%);
-}
-
-/* Floating cards */
-
-.float-card {
-  position: absolute;
-  z-index: 4;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 11px 14px;
-  border: 1px solid rgba(48, 48, 48, 0.07);
-  border-radius: 15px;
-  background: rgba(255, 253, 248, 0.94);
-  box-shadow: 0 20px 35px -25px rgba(39, 68, 58, 0.55);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  animation: float-bob 7s ease-in-out infinite;
-}
-
-.float-card strong {
-  display: block;
-  color: var(--ink);
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.3;
-}
-
-.float-card span {
-  display: block;
-  margin-top: 1px;
-  color: var(--ink-faint);
-  font-size: 8px;
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-.float-rsvp {
-  top: 92px;
-  left: -58px;
-  transform: rotate(-3deg);
-}
-
-.float-feedback {
-  right: -44px;
-  bottom: 98px;
-  transform: rotate(2deg);
-  animation-delay: -3.5s;
-}
-
-.float-icon {
-  display: grid;
-  place-items: center;
-  width: 31px;
-  height: 31px;
-  flex: none;
-  border-radius: 50%;
-}
-
-.float-icon--green {
-  background: var(--green);
-  color: #fff;
-}
-
-.float-icon .icon {
-  width: 16px;
-  height: 16px;
-  stroke-width: 2.5;
-}
-
-.float-stars {
-  color: var(--amber);
-  font-size: 10px;
-  letter-spacing: 1px;
-  line-height: 1;
-}
-
-@keyframes float-bob {
-  0%, 100% { translate: 0 0; }
-  50% { translate: 0 -8px; }
 }
 
 /* =========================
@@ -2077,13 +1973,6 @@ ul, ol {
    Responsive
    ========================= */
 
-@media (max-width: 1150px) {
-  /* The hero columns get tight here — keep the phone mockup uncluttered. */
-  .float-card {
-    display: none;
-  }
-}
-
 @media (max-width: 1080px) {
   .hero-grid {
     gap: 28px;
@@ -2148,23 +2037,6 @@ ul, ol {
     height: 440px;
   }
 
-  .orbit-two {
-    width: 550px;
-    height: 550px;
-  }
-
-  .float-card {
-    display: flex;
-  }
-
-  .float-rsvp {
-    left: 0;
-  }
-
-  .float-feedback {
-    right: 0;
-  }
-
   .glance-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2222,13 +2094,6 @@ ul, ol {
 
   .footer-top {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 700px) {
-  /* On phones the phone mockup is the whole show. */
-  .float-card {
-    display: none;
   }
 }
 
@@ -2340,48 +2205,6 @@ ul, ol {
 
   .app-quick {
     margin-top: 9px;
-  }
-
-  .orbit-one {
-    width: 400px;
-    height: 400px;
-  }
-
-  .orbit-two {
-    width: 490px;
-    height: 490px;
-  }
-
-  .float-card {
-    padding: 9px 11px;
-  }
-
-  .float-card strong {
-    font-size: 9.5px;
-  }
-
-  .float-card span {
-    font-size: 7px;
-  }
-
-  .float-rsvp {
-    top: 54px;
-    left: -4px;
-  }
-
-  .float-feedback {
-    right: -4px;
-    bottom: 50px;
-  }
-
-  .float-icon {
-    width: 27px;
-    height: 27px;
-  }
-
-  .float-icon .icon {
-    width: 14px;
-    height: 14px;
   }
 
   .glance-item {
@@ -2529,20 +2352,6 @@ ul, ol {
 
   .hero-visual {
     min-height: 520px;
-  }
-
-  .float-card {
-    display: none;
-  }
-
-  .orbit-one {
-    width: 340px;
-    height: 340px;
-  }
-
-  .orbit-two {
-    width: 420px;
-    height: 420px;
   }
 
   .glance-item {
